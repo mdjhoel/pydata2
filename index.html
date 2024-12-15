@@ -1,0 +1,68 @@
+<html>
+
+	<head>
+		<title>Titanic</title>
+		<style>
+			body {
+				font-family: times;
+			}
+
+			.men {
+				width: 100px;
+				height: 50px;
+				x: 2;
+				y: 10 !important; 
+				rx: 15;
+				ry: 15;
+				fill: blue;
+				transition: 2s;
+			}
+
+			.men:hover {
+				width: 840px;
+				height: 50px;
+				stroke: grey;
+				stroke-width: 2px;
+			}
+
+
+		</style>
+	</head>
+
+	<body>
+		<h1>Women and Children first?</h1>
+		<p>The Titanic sank without enough life boats. There is a belief that the captain said "women and children first". Was it true?</p>
+		<p>We created a Python program (using the following steps) to answer the question by determining the % of each group (men, women, children) died in the tragedy. Here are the results of my DS project.</p>
+		 <ol>
+		  <li>Read titanic.csv into a file memory variable</li>
+		  <li>Read the column title row into a string variable</li>
+		  <li>Read the remaining data rows in a list of strings (rows)</li>
+		  <li>Close the file to save computer resources.</li>
+		  <li>Sequential search of each row in the data list</li>
+		  	<ul>
+		  		<li>Set total and dead counter variables to 0</li>
+		  		<li>Start the loop</li>
+		  		<li>Split each row string into list for easy access</li>
+		  		<li>if the row/person is male, add 1 to total variable</li>
+		  		<li>if the row/person died, add 1 to dead variable</li>
+		  		<li>after loop ends, return dead / total * 100</li>
+		  	</ul>
+		</ol> 
+		<p>There are some issues with the data (missing age data) and how much the price of tickets affected survival rates, but overall, we accepted our methods. Here are the results of my DS project.</p>
+
+		<svg width="850" height="200">
+			<rect class="men" />
+			<rect width="240" height="50" x="2" y="70" fill="pink" />
+			<rect width="420" height="50" x="2" y="130" fill="orange"/>
+			<text x="10" y="40" fill="white">Men</text>
+			<text x="10" y="100" fill="white">Women</text>
+			<text x="10" y="160" fill="white">Children</text>
+			<text x="790" y="40" fill="white">84%</text>
+			<text x="190" y="100" fill="white">24%</text>
+			<text x="370" y="160" fill="white">42%</text>
+		</svg>
+
+		<p>TO DO: change font, add an image, add a margin, make women and kids rectangle the same as men. Make another 2 changes to your site.</p>
+	</body>
+
+</html>
